@@ -1,0 +1,11 @@
+D:\StoreManager\DAO\BUS\bin\Debug\BUS.dll
+D:\StoreManager\DAO\BUS\bin\Debug\BUS.pdb
+D:\StoreManager\DAO\BUS\bin\Debug\DAO.dll
+D:\StoreManager\DAO\BUS\bin\Debug\DTO.dll
+D:\StoreManager\DAO\BUS\bin\Debug\DAO.pdb
+D:\StoreManager\DAO\BUS\bin\Debug\DTO.pdb
+D:\StoreManager\DAO\BUS\obj\Debug\BUS.csproj.AssemblyReference.cache
+D:\StoreManager\DAO\BUS\obj\Debug\BUS.csproj.CoreCompileInputs.cache
+D:\StoreManager\DAO\BUS\obj\Debug\BUS.csproj.CopyComplete
+D:\StoreManager\DAO\BUS\obj\Debug\BUS.dll
+D:\StoreManager\DAO\BUS\obj\Debug\BUS.pdb
