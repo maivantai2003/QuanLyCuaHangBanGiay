@@ -48,5 +48,9 @@ namespace BUS
         {
             return taiKhoan.KiemTraTaiKhoan(MaTaiKhoan);
         }
+        public bool KiemTraTenTaiKhoan(string tentaikhoan)
+        {
+            return taiKhoan.KiemTraTenTaiKhoan(tentaikhoan);
+        }
     }
 }

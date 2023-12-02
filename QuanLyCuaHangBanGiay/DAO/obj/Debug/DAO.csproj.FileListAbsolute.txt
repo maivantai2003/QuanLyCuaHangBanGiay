@@ -7,3 +7,12 @@ D:\StoreManager\DAO\DAO\bin\Debug\DTO.pdb
 D:\StoreManager\DAO\DAO\obj\Debug\DAO.csproj.CopyComplete
 D:\StoreManager\DAO\DAO\obj\Debug\DAO.dll
 D:\StoreManager\DAO\DAO\obj\Debug\DAO.pdb
+C:\QuanLyCuaHangBanGiay\QuanLyCuaHangBanGiay\DAO\bin\Debug\DAO.dll
+C:\QuanLyCuaHangBanGiay\QuanLyCuaHangBanGiay\DAO\bin\Debug\DAO.pdb
+C:\QuanLyCuaHangBanGiay\QuanLyCuaHangBanGiay\DAO\bin\Debug\DTO.dll
+C:\QuanLyCuaHangBanGiay\QuanLyCuaHangBanGiay\DAO\bin\Debug\DTO.pdb
+C:\QuanLyCuaHangBanGiay\QuanLyCuaHangBanGiay\DAO\obj\Debug\DAO.csproj.AssemblyReference.cache
+C:\QuanLyCuaHangBanGiay\QuanLyCuaHangBanGiay\DAO\obj\Debug\DAO.csproj.CoreCompileInputs.cache
+C:\QuanLyCuaHangBanGiay\QuanLyCuaHangBanGiay\DAO\obj\Debug\DAO.csproj.CopyComplete
+C:\QuanLyCuaHangBanGiay\QuanLyCuaHangBanGiay\DAO\obj\Debug\DAO.dll
+C:\QuanLyCuaHangBanGiay\QuanLyCuaHangBanGiay\DAO\obj\Debug\DAO.pdb

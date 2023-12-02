@@ -55,7 +55,7 @@ namespace GUI
                     }
                     else
                     {
-                        if (taiKhoanBUS.KiemTraTaiKhoan(taikhoan.MaTaiKhoan))
+                        if (taiKhoanBUS.KiemTraTaiKhoan(taikhoan.MaTaiKhoan) || taiKhoanBUS.KiemTraTenTaiKhoan(txtTenTaiKhoan.Text))
                         {
                             MessageBox.Show("Tài Khoản Đã Tồn Tại");
                         }
@@ -96,24 +96,24 @@ namespace GUI
                     taikhoan.MaTaiKhoan = Convert.ToInt32(comboxTaiKhoan.Text.Split('-')[0]);
                     taikhoan.TenTaikhoan = txtTenTaiKhoan.Text;
                     taikhoan.MaNhomQuyen = Convert.ToInt32(comboxTenNhomQuyen.Text.Split('-')[0]);
-                    /*if (taiKhoanBUS.KiemTraTaiKhoan(taikhoan.MaTaiKhoan))
+                    if (taiKhoanBUS.KiemTraTenTaiKhoan(txtTenTaiKhoan.Text))
                     {
                         MessageBox.Show("Tài Khoản Đã Tồn Tại");
                     }
                     else
                     {
-                        
-                    }*/
-                    if (taiKhoanBUS.SuaTaiKhoan(taikhoan))
-                    {
-                        LichSuHoatDong.LichSu(FormMain.MaTaiKhoan, "Sửa Tài Khoản: " + txtTenTaiKhoan.Text);
-                        MessageBox.Show("Sửa Thành Công");
-                        this.Dispose();
+                        if (taiKhoanBUS.SuaTaiKhoan(taikhoan))
+                        {
+                            LichSuHoatDong.LichSu(FormMain.MaTaiKhoan, "Sửa Tài Khoản: " + txtTenTaiKhoan.Text);
+                            MessageBox.Show("Sửa Thành Công");
+                            this.Dispose();
+                        }
+                        else
+                        {
+                            MessageBox.Show("Sửa Tài Khoản Thất Bại");
+                        }
                     }
-                    else
-                    {
-                        MessageBox.Show("Sửa Tài Khoản Thất Bại");
-                    }
+                    
                 }
 
             }

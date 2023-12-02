@@ -164,5 +164,20 @@ namespace DAO
             CloseConnection();
             return false;
         }
+        public bool KiemTraTenTaiKhoan(string tentaikhoan)
+        {
+            string sql = "select * from TaiKhoan where TenTaiKhoan=@TenTaiKhoan and TrangThai=1";
+            OpenConnection();
+            command = new SqlCommand(sql, connection);
+            command.Parameters.Add("@TenTaiKhoan", SqlDbType.NVarChar).Value = tentaikhoan;
+            reader = command.ExecuteReader();
+            if (reader.Read())
+            {
+                CloseConnection();
+                return true;
+            }
+            CloseConnection();
+            return false;
+        }
     }
 }

@@ -9,3 +9,14 @@ D:\StoreManager\DAO\BUS\obj\Debug\BUS.csproj.CoreCompileInputs.cache
 D:\StoreManager\DAO\BUS\obj\Debug\BUS.csproj.CopyComplete
 D:\StoreManager\DAO\BUS\obj\Debug\BUS.dll
 D:\StoreManager\DAO\BUS\obj\Debug\BUS.pdb
+C:\QuanLyCuaHangBanGiay\QuanLyCuaHangBanGiay\BUS\bin\Debug\BUS.dll
+C:\QuanLyCuaHangBanGiay\QuanLyCuaHangBanGiay\BUS\bin\Debug\BUS.pdb
+C:\QuanLyCuaHangBanGiay\QuanLyCuaHangBanGiay\BUS\bin\Debug\DAO.dll
+C:\QuanLyCuaHangBanGiay\QuanLyCuaHangBanGiay\BUS\bin\Debug\DTO.dll
+C:\QuanLyCuaHangBanGiay\QuanLyCuaHangBanGiay\BUS\bin\Debug\DAO.pdb
+C:\QuanLyCuaHangBanGiay\QuanLyCuaHangBanGiay\BUS\bin\Debug\DTO.pdb
+C:\QuanLyCuaHangBanGiay\QuanLyCuaHangBanGiay\BUS\obj\Debug\BUS.csproj.AssemblyReference.cache
+C:\QuanLyCuaHangBanGiay\QuanLyCuaHangBanGiay\BUS\obj\Debug\BUS.csproj.CoreCompileInputs.cache
+C:\QuanLyCuaHangBanGiay\QuanLyCuaHangBanGiay\BUS\obj\Debug\BUS.csproj.CopyComplete
+C:\QuanLyCuaHangBanGiay\QuanLyCuaHangBanGiay\BUS\obj\Debug\BUS.dll
+C:\QuanLyCuaHangBanGiay\QuanLyCuaHangBanGiay\BUS\obj\Debug\BUS.pdb

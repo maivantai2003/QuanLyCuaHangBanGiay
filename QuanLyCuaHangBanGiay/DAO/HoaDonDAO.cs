@@ -83,7 +83,26 @@ namespace DAO
             }
             CloseConnection();
             return list;
-        } 
+        }
+        public List<string> TimKiemSanPhamBan(string text)
+        {
+            List<string> list = new List<string>();
+            string sql = "SELECT SanPham.MaSanPham, TenSanPham, TheLoai.TenTheLoai, ChatLieu.TenChatLieu, ThuongHieu.TenThuongHieu, MauSac.TenMau, KichCo.TenKichCo, SanPham.GiaSanPham,ChiTietSanPham.SoLuongTon,ChiTietSanPham.MaChiTietSanPham FROM SanPham " +
+                "JOIN ChatLieu ON SanPham.MaChatLieu = ChatLieu.MaChatLieu JOIN TheLoai ON SanPham.MaTheLoai = TheLoai.MaTheLoai " +
+                "JOIN ThuongHieu ON SanPham.MaThuongHieu = ThuongHieu.MaThuongHieu JOIN ChiTietSanPham ON SanPham.MaSanPham = ChiTietSanPham.MaSanPham " +
+                "JOIN MauSac ON ChiTietSanPham.MaMauSac = MauSac.MaMau JOIN KichCo ON ChiTietSanPham.MaKichCo = KichCo.MaKichCo where CONCAT(SanPham.MaSanPham, TenSanPham, TheLoai.TenTheLoai, ChatLieu.TenChatLieu, ThuongHieu.TenThuongHieu, MauSac.TenMau, KichCo.TenKichCo) COLLATE Latin1_General_CI_AI like '%" + text + "%' and SanPham.GiaSanPham>0 and ChiTietSanPham.SoLuongTon>0";
+            command = new SqlCommand(sql, connection);
+            OpenConnection();
+            reader = command.ExecuteReader();
+            while (reader.Read())
+            {
+                list.Add(reader.GetInt32(0) + "," + reader.GetString(1) + "," + reader.GetString(2) + "," + reader.GetString(3) + ","
+                    + reader.GetString(4) + "," + reader.GetString(5) + "," + reader.GetString(6) + ","
+                    + reader.GetDouble(7) + "," + reader.GetInt32(8) + "," + reader.GetInt32(9));
+            }
+            CloseConnection();
+            return list;
+        }
         public bool CapNhatHoaDon(HoaDon hoadon)
         {
             string sql = "update HoaDon set MaKhuyenMai=@MaKhuyenMai, MaThue=@MaThue,TongTienThue=@TongTienThue,TongTienKhuyenMai=@TongTienKhuyenMai,HinhThucThanhToan=@HinhThucThanhToan,TongTien=@TongTien,ThanhTien=@ThanhTien where MaHoaDon=@MaHoaDon";

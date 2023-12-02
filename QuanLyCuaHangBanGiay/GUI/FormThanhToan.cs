@@ -32,7 +32,9 @@ namespace GUI
         ThueBUS thueBUS=new ThueBUS(); 
         KhuyenMaiBUS khuyenMaiBUS=new KhuyenMaiBUS();   
         ChiTietHoaDonBUS chiTietHoaDonBUS=new ChiTietHoaDonBUS();
+        public string TrangThai;
         [DllImport("Gdi32.dll", EntryPoint = "CreateRoundRectRgn")]
+        
         private static extern IntPtr CreateRoundRectRgn
 (
     int nLeftRect,     // x-coordinate of upper-left corner
@@ -66,6 +68,7 @@ namespace GUI
         }
         private void btnHuy_Click(object sender, EventArgs e)
         {
+            TrangThai = "Hủy";
             this.Close();
         }
 
@@ -232,6 +235,7 @@ namespace GUI
                     }
                     printPreviewDialog1.Document = printDocument1;
                     MessageBox.Show("Thanh Toán Thành Công");
+                    TrangThai = "Thanh Toán";
                     printPreviewDialog1.ShowDialog();
                 }
                 else

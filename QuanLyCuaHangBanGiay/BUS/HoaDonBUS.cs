@@ -73,5 +73,9 @@ namespace BUS
         {
             return hoaDonDAO.XoaHoaDon(mahoadon);
         }
+        public List<string> TimKiemSanPhamBan(string text)
+        {
+            return hoaDonDAO.TimKiemSanPhamBan(text);
+        }
     }
 }

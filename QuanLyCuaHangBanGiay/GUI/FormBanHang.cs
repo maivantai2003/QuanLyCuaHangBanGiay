@@ -20,7 +20,9 @@ namespace GUI
         public FormBanHang(int MaNhanVien)
         {
             InitializeComponent();
-            Manhanvien = MaNhanVien;    
+            Manhanvien = MaNhanVien;
+            btnClear.Text = "";
+            btnClear.Visible = false;
         }
         int vt = 0;
         int i;
@@ -51,8 +53,12 @@ namespace GUI
                 FormThanhToan formThanhToan = new FormThanhToan(list);
                 formThanhToan.txtMaNhanVien.Text = Manhanvien + "-" + nhanVienBUS.TenNhanVien(Manhanvien);
                 formThanhToan.ShowDialog();
-                dataGridViewChiTietHoaDon.Rows.Clear();
-                LoadData();
+                if(formThanhToan.TrangThai=="Thanh Toán")
+                {
+                    dataGridViewChiTietHoaDon.Rows.Clear();
+                    LoadData();
+                }
+                
             }
         }
 
@@ -97,6 +103,7 @@ namespace GUI
                     dataGridViewChiTietHoaDon.Rows.Add(txtTenSanPham.Text, mausac, kickco, txtGiaSanPham.Text, numericSoLuong.Value, txtThanhTien.Text);
                     Clear();
                     dataGridViewDanhSachSanPham.Rows[vt].Selected = false;
+                    txtTK.Text = "";
                 }
                 /*dataGridViewChiTietHoaDon.Rows.Add(txtTenSanPham.Text, mausac, kickco, txtGiaSanPham.Text, numericSoLuong.Value, txtThanhTien.Text);
                 Clear();
@@ -115,8 +122,6 @@ namespace GUI
             {
                 MessageBox.Show("Vui Lòng Nhập Sản Phẩm Cần Sửa");
             }
-           
-
         }
         public void Clear()
         {
@@ -166,15 +171,16 @@ namespace GUI
 
         private void textBox1_TextChanged(object sender, EventArgs e)
         {
-            /*if (KiemTraLoi.KiemTraRong(txtTK.Text))
+            if (KiemTraLoi.KiemTraRong(txtTK.Text))
             {
+                btnClear.Visible = false;
                 LoadData();
             }
             else
             {
-                string rowFilter = string.Format("{0} like '{1}'", "Name", "*" + txtTK.Text + "*");
-                (dataGridViewDanhSachSanPham.DataSource as DataTable).DefaultView.RowFilter = rowFilter;
-            }*/
+                btnClear.Visible = true;
+                LoadData(txtTK.Text);
+            }
         }
         public void LoadData()
         {
@@ -187,5 +193,24 @@ namespace GUI
             }
             dataGridViewDanhSachSanPham.ClearSelection();
         }
+
+        private void btnClear_Click(object sender, EventArgs e)
+        {
+            txtTK.Text = "";
+            btnClear.Visible = false;   
+        }
+
+        public void LoadData(string text)
+        {
+            dataGridViewDanhSachSanPham.Rows.Clear();
+            foreach (var i in hoaDonBUS.TimKiemSanPhamBan(text))
+            {
+                string[] s = i.Split(',');
+                dataGridViewDanhSachSanPham.Rows.Add(s[0], s[1], s[2], s[3], s[4], s[5], s[6], s[7], chiTietSanPhamBUS.HinhAnh(Convert.ToInt32(s[9])), s[8]);
+
+            }
+            dataGridViewDanhSachSanPham.ClearSelection();
+        }
+
     }
 }
