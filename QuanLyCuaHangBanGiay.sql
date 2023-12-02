@@ -395,6 +395,3 @@ on ChiTietHoaDon.MaHoaDon=HoaDon.MaHoaDon join MauSac on MauSac.MaMau=ChiTietSan
 join KichCo on KichCo.MaKichCo=ChiTietSanPham.MaKichCo join SanPham on SanPham.MaSanPham=ChiTietSanPham.MaSanPham
 group by ChiTietSanPham.MaChiTietSanPham,SanPham.MaSanPham,SanPham.TenSanPham,KichCo.TenKichCo,MauSac.TenMau
 -----------
-select * from ChucNang
-update ChucNang set TrangThai=1 where MaChucNang=3
-select * from KhachHang
