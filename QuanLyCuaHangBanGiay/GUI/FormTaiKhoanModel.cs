@@ -96,24 +96,17 @@ namespace GUI
                     taikhoan.MaTaiKhoan = Convert.ToInt32(comboxTaiKhoan.Text.Split('-')[0]);
                     taikhoan.TenTaikhoan = txtTenTaiKhoan.Text;
                     taikhoan.MaNhomQuyen = Convert.ToInt32(comboxTenNhomQuyen.Text.Split('-')[0]);
-                    if (taiKhoanBUS.KiemTraTenTaiKhoan(txtTenTaiKhoan.Text))
+                    if (taiKhoanBUS.SuaTaiKhoan(taikhoan))
                     {
-                        MessageBox.Show("Tài Khoản Đã Tồn Tại");
+                        LichSuHoatDong.LichSu(FormMain.MaTaiKhoan, "Sửa Tài Khoản: " + txtTenTaiKhoan.Text);
+                        MessageBox.Show("Sửa Thành Công");
+                        this.Dispose();
                     }
                     else
                     {
-                        if (taiKhoanBUS.SuaTaiKhoan(taikhoan))
-                        {
-                            LichSuHoatDong.LichSu(FormMain.MaTaiKhoan, "Sửa Tài Khoản: " + txtTenTaiKhoan.Text);
-                            MessageBox.Show("Sửa Thành Công");
-                            this.Dispose();
-                        }
-                        else
-                        {
-                            MessageBox.Show("Sửa Tài Khoản Thất Bại");
-                        }
+                        MessageBox.Show("Sửa Tài Khoản Thất Bại");
                     }
-                    
+
                 }
 
             }
