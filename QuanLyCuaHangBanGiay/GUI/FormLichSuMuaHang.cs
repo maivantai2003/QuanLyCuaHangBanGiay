@@ -36,7 +36,7 @@ namespace GUI
             if (tencot == "ChiTiet")
             {
                 int mahoadon = Convert.ToInt32(dataGridViewLichSuMuaHang.Rows[e.RowIndex].Cells[0].Value.ToString());
-                FormCTHD chitiethoadon = new FormCTHD(mahoadon);
+                FormXemChiTietHoaDon chitiethoadon = new FormXemChiTietHoaDon(mahoadon);
                 chitiethoadon.ShowDialog();
             }
         }

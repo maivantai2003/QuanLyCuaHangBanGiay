@@ -87,7 +87,7 @@ namespace GUI
             {
                 int mahoadon = Convert.ToInt32(dataGridViewHoaDon.Rows[e.RowIndex].Cells[0].Value.ToString());
 
-                FormCTHD chitiethoadon = new FormCTHD(mahoadon);
+                FormXemChiTietHoaDon chitiethoadon = new FormXemChiTietHoaDon(mahoadon);
                 chitiethoadon.ShowDialog(); 
             }
             else if(tencot=="Xoa")

@@ -209,10 +209,6 @@ C:\QuanLyCuaHangBanGiay\QuanLyCuaHangBanGiay\GUI\obj\Debug\GUI.FormChiTietSanPha
 C:\QuanLyCuaHangBanGiay\QuanLyCuaHangBanGiay\GUI\obj\Debug\GUI.FormChiTietThuongHieu.resources
 C:\QuanLyCuaHangBanGiay\QuanLyCuaHangBanGiay\GUI\obj\Debug\GUI.FormChucNang.resources
 C:\QuanLyCuaHangBanGiay\QuanLyCuaHangBanGiay\GUI\obj\Debug\GUI.FormChucNangModel.resources
-C:\QuanLyCuaHangBanGiay\QuanLyCuaHangBanGiay\GUI\obj\Debug\GUI.FormCTHD.resources
-C:\QuanLyCuaHangBanGiay\QuanLyCuaHangBanGiay\GUI\obj\Debug\GUI.FormCTPN.resources
-C:\QuanLyCuaHangBanGiay\QuanLyCuaHangBanGiay\GUI\obj\Debug\GUI.FormCTPT.resources
-C:\QuanLyCuaHangBanGiay\QuanLyCuaHangBanGiay\GUI\obj\Debug\GUI.FormCTSP.resources
 C:\QuanLyCuaHangBanGiay\QuanLyCuaHangBanGiay\GUI\obj\Debug\GUI.FormLichSuHeThong.resources
 C:\QuanLyCuaHangBanGiay\QuanLyCuaHangBanGiay\GUI\obj\Debug\GUI.FormLichSuMuaHang.resources
 C:\QuanLyCuaHangBanGiay\QuanLyCuaHangBanGiay\GUI\obj\Debug\GUI.FormHoaDon.resources
@@ -277,3 +273,7 @@ C:\QuanLyCuaHangBanGiay\QuanLyCuaHangBanGiay\GUI\obj\Debug\GUI.csproj.Fody.CopyL
 C:\QuanLyCuaHangBanGiay\QuanLyCuaHangBanGiay\GUI\obj\Debug\GUI.csproj.CopyComplete
 C:\QuanLyCuaHangBanGiay\QuanLyCuaHangBanGiay\GUI\obj\Debug\GUI.exe
 C:\QuanLyCuaHangBanGiay\QuanLyCuaHangBanGiay\GUI\obj\Debug\GUI.pdb
+C:\QuanLyCuaHangBanGiay\QuanLyCuaHangBanGiay\GUI\obj\Debug\GUI.FormXemChiTietHoaDon.resources
+C:\QuanLyCuaHangBanGiay\QuanLyCuaHangBanGiay\GUI\obj\Debug\GUI.FormXemChiTietPhieuNhap.resources
+C:\QuanLyCuaHangBanGiay\QuanLyCuaHangBanGiay\GUI\obj\Debug\GUI.FormXemChiTietPhieuTra.resources
+C:\QuanLyCuaHangBanGiay\QuanLyCuaHangBanGiay\GUI\obj\Debug\GUI.FormXemChiTietSanPham.resources

@@ -109,7 +109,7 @@ namespace GUI
             }
             else if (name == "ChiTiet")
             {
-               FormCTSP ctsp=new FormCTSP(Convert.ToInt32(dataGridViewSanPham.Rows[e.RowIndex].Cells[0].Value.ToString()));
+               FormXemChiTietSanPham ctsp=new FormXemChiTietSanPham(Convert.ToInt32(dataGridViewSanPham.Rows[e.RowIndex].Cells[0].Value.ToString()));
                ctsp.ShowDialog();
                dataGridViewSanPham.ClearSelection();
             }

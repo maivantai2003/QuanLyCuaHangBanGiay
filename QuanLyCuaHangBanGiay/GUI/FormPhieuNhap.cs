@@ -44,7 +44,7 @@ namespace GUI
             string tencot = dataGridViewPhieuNhap.Columns[e.ColumnIndex].Name;
             if (tencot == "ChiTiet")
             {
-                FormCTPN ctpn=new FormCTPN(Convert.ToInt32(dataGridViewPhieuNhap.Rows[e.RowIndex].Cells[0].Value.ToString()));
+                FormXemChiTietPhieuNhap ctpn=new FormXemChiTietPhieuNhap(Convert.ToInt32(dataGridViewPhieuNhap.Rows[e.RowIndex].Cells[0].Value.ToString()));
                 ctpn.ShowDialog();
                 dataGridViewPhieuNhap.ClearSelection();
             }

@@ -146,29 +146,29 @@
     <Compile Include="FormChucNangModel.Designer.cs">
       <DependentUpon>FormChucNangModel.cs</DependentUpon>
     </Compile>
-    <Compile Include="FormCTHD.cs">
+    <Compile Include="FormXemChiTietHoaDon.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FormCTHD.Designer.cs">
-      <DependentUpon>FormCTHD.cs</DependentUpon>
+    <Compile Include="FormXemChiTietHoaDon.Designer.cs">
+      <DependentUpon>FormXemChiTietHoaDon.cs</DependentUpon>
     </Compile>
-    <Compile Include="FormCTPN.cs">
+    <Compile Include="FormXemChiTietPhieuNhap.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FormCTPN.Designer.cs">
-      <DependentUpon>FormCTPN.cs</DependentUpon>
+    <Compile Include="FormXemChiTietPhieuNhap.Designer.cs">
+      <DependentUpon>FormXemChiTietPhieuNhap.cs</DependentUpon>
     </Compile>
-    <Compile Include="FormCTPT.cs">
+    <Compile Include="FormXemChiTietPhieuTra.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FormCTPT.Designer.cs">
-      <DependentUpon>FormCTPT.cs</DependentUpon>
+    <Compile Include="FormXemChiTietPhieuTra.Designer.cs">
+      <DependentUpon>FormXemChiTietPhieuTra.cs</DependentUpon>
     </Compile>
-    <Compile Include="FormCTSP.cs">
+    <Compile Include="FormXemChiTietSanPham.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FormCTSP.Designer.cs">
-      <DependentUpon>FormCTSP.cs</DependentUpon>
+    <Compile Include="FormXemChiTietSanPham.Designer.cs">
+      <DependentUpon>FormXemChiTietSanPham.cs</DependentUpon>
     </Compile>
     <Compile Include="FormLichSuHeThong.cs">
       <SubType>Form</SubType>
@@ -566,17 +566,17 @@
     <EmbeddedResource Include="FormChucNangModel.resx">
       <DependentUpon>FormChucNangModel.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FormCTHD.resx">
-      <DependentUpon>FormCTHD.cs</DependentUpon>
+    <EmbeddedResource Include="FormXemChiTietHoaDon.resx">
+      <DependentUpon>FormXemChiTietHoaDon.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FormCTPN.resx">
-      <DependentUpon>FormCTPN.cs</DependentUpon>
+    <EmbeddedResource Include="FormXemChiTietPhieuNhap.resx">
+      <DependentUpon>FormXemChiTietPhieuNhap.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FormCTPT.resx">
-      <DependentUpon>FormCTPT.cs</DependentUpon>
+    <EmbeddedResource Include="FormXemChiTietPhieuTra.resx">
+      <DependentUpon>FormXemChiTietPhieuTra.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FormCTSP.resx">
-      <DependentUpon>FormCTSP.cs</DependentUpon>
+    <EmbeddedResource Include="FormXemChiTietSanPham.resx">
+      <DependentUpon>FormXemChiTietSanPham.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormLichSuHeThong.resx">
       <DependentUpon>FormLichSuHeThong.cs</DependentUpon>

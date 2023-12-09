@@ -88,7 +88,7 @@ namespace GUI
             if (tencot == "ChiTiet")                                             
             {
                 int maphieutra = Convert.ToInt32(dataGridViewPhieuTra.Rows[e.RowIndex].Cells[0].Value.ToString());
-                FormCTPT chitietphieutra=new FormCTPT(maphieutra);
+                FormXemChiTietPhieuTra chitietphieutra=new FormXemChiTietPhieuTra(maphieutra);
                 chitietphieutra.ShowDialog();
                 dataGridViewPhieuTra.ClearSelection();
             }else if (tencot == "Xoa")
