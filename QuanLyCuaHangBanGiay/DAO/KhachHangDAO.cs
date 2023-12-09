@@ -68,11 +68,6 @@ namespace DAO
             CloseConnection();
             return n > 0;   
         }
-        public List<string> LichSuMuaHang(int makhachhang)
-        {
-            List<string> list = new List<string>();
-            return list;
-        }
         public bool KiemTraSoDienThoai(string sodienthoai)
         {
             string sql = "select MaKhachHang from KhachHang where SoDienThoai=@SoDienThoai";
