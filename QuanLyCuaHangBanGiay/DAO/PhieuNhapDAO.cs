@@ -143,7 +143,10 @@ namespace DAO
         public List<PhieuNhap> TimKiemPhieuNhap(string text)
         {
             List<PhieuNhap> arrayphieunhap = new List<PhieuNhap>();
-            string sql = "select * from PhieuNhap where concat(MaPhieuNhap, MaNhaCungCap,MaNhanVien, NgayNhap, TenPhieuNhap, TongTienNhap)COLLATE Latin1_General_CI_AI like '%" + text + "%' and TrangThai=1";
+            string sql = "select MaPhieuNhap, PhieuNhap.MaNhaCungCap,PhieuNhap.MaNhanVien, NgayNhap, TenPhieuNhap, TongTienNhap, PhieuNhap.TrangThai from PhieuNhap " +
+                "join NhanVien on NhanVien.MaNhanVien=PhieuNhap.MaNhanVien " +
+                "join NhaCungCap on NhaCungCap.MaNhaCungCap=PhieuNhap.MaNhaCungCap " +
+                "where concat(MaPhieuNhap, PhieuNhap.MaNhaCungCap,PhieuNhap.MaNhanVien, NgayNhap, TenPhieuNhap, TongTienNhap,NhanVien.TenNhanVien,NhaCungCap.TenNhaCungCap)COLLATE Latin1_General_CI_AI like '%" + text + "%' and PhieuNhap.TrangThai=1";
             command = new SqlCommand(sql, connection);
             OpenConnection();
             reader = command.ExecuteReader();
