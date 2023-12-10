@@ -1,5 +1,5 @@
-Nhóm 2 -Thực Hành Chiều Thứ 5(6-7)-Lý Thuyết Sáng Thứ 6 (1-2-3) 
-Đề Tài:PHẦN MỀM QUẢN LÝ CỬA HÀNG BÁN GIÀY
+Thực Hành Chiều Thứ 5(6-7)-Lý Thuyết Sáng Thứ 6 (1-2-3) 
+Nhóm 2 - Đề Tài:PHẦN MỀM QUẢN LÝ CỬA HÀNG BÁN GIÀY
 1.Mai Văn Tài(Nhóm Trưởng) - 3121410432
 2.Trần Quốc Sĩ - 3121410420
 3.Huỳnh Công Minh Thiện - 3120410491
